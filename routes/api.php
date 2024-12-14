@@ -10,4 +10,5 @@ Route::get('/user', function (Request $request) {
 
 
 Route::resource('category', CategoryController::class);
+Route::delete('/category',[CategoryController::class,'removeCategories'])->name('category.multi.categories');
 
